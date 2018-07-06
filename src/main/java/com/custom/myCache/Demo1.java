@@ -39,7 +39,6 @@ public class Demo1 implements Runnable {
         System.out.println("Start");
         ids.forEach(id -> {
             Vehicle vehicle = null;
-            System.out.println("From lambda --->" + id);
             boolean isCacheEnabled = true;
             if (cache.get(id) != null && isCacheEnabled) {
                 System.out.println("Accessing from cache");
