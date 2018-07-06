@@ -24,7 +24,6 @@ public class Demo1 implements Runnable {
             catch (Exception e){
                 System.out.println("Exception at " + i);
             }
-
         });
         executor.shutdown();
         while (!executor.isTerminated()) {
